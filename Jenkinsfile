@@ -12,5 +12,10 @@ pipeline {
                echo "$GIT_BRANCH"
             }
         }
+        stage('Docker Build') {
+            steps {
+               shell(script: 'docker images -a')
+            }
+        }
     }
 }
