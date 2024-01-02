@@ -12,9 +12,15 @@ pipeline {
                echo "$GIT_BRANCH"
             }
         }
-        stage('Docker Build') {
+        stage('podman Build') {
             steps {
                sh 'podman images -a'
+               sh """
+               podman container list -a
+               podman pull alpine
+               podman run --rm alpine cat /etc/hostname
+               podman container list -a
+               """
             }
         }
     }
