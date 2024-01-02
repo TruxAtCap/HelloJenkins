@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Docker Build') {
             steps {
-               sh 'docker images -a'
+               sh 'podman images -a'
             }
         }
     }
