@@ -40,6 +40,6 @@ pipeline {
                 echo "Build failed..."
             }
         }
-    }
 */
+    }
 }
