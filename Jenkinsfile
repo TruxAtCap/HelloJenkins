@@ -31,13 +31,15 @@ pipeline {
                 }
             }
         }
-#       post {
-#           success {
-#               echo "This build is successful !"
-#           }
-#           failure {
-#               echo "Build failed..."
-#           }
-#       }
+/*
+        post {
+            success {
+                echo "This build is successful !"
+            }
+            failure {
+                echo "Build failed..."
+            }
+        }
     }
+*/
 }
